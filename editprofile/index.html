@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../stylesheets/reset.css">
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <link rel="stylesheet" href="../stylesheets/slicknav.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title>Imagery</title>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="logo">
+      <nav class="mobile-menu">
+      <img src="../images/logo.png">
+      <ul id="menu">
+        <li><a href="../homepage">HOME</a></li>
+        <li><a href="../newpost">NEW POST</a></li>
+        <li><a href="../profile">PROFILE</a></li>
+        <li><a href="../search">SEARCH</a></li>
+      </ul>
+      </nav>
+    </div>
+    <h1 class="large-title">EDIT PROFILE</h1>
+    <div id="input-container">
+      <form action="../profile/">
+        <label for="username">Username</label>
+        <input class="input edit-profile" name="username" type="text" placeholder="worldonpase">
+        <label for="email">Email</label>
+        <input class="input edit-profile" name="email" type="text" placeholder="dustin@worldonpause.com">
+        <label for="location">Location</label>
+        <input class="input edit-profile" name="location" type="text" placeholder="New York, NY">
+        <label for="location">Biography</label>
+        <input class="input edit-profile biography" name="biography" type="text" placeholder="product designer | photographer"  maxlength="100">
+        <input type="submit" value="SUBMIT" class="signups-input">
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/slicknav.js"></script>
+  <script src="../js/slick.js"></script>
+
+</body>
+
+</html>
