@@ -73,7 +73,7 @@ img {
 .logo ul {
   text-align: right;
   position: relative;
-  margin-top: -2em;
+  margin-top: -3em;
 }
 
 /* line 64, ../sass/style.scss */
@@ -181,7 +181,7 @@ nav img {
 }
 
 /* line 144, ../sass/style.scss */
-.signups:hover, .signups:visited:hover, .signups-input:hover, .signups-input:visited:hover {
+.signups:hover, .signups:visited:hover, .signups-input:hover, .signups-input:visited:hover, .add-new:hover, .add-new:visited:hover {
   background: #f39c0b;
 }
 
@@ -210,7 +210,7 @@ nav img {
   }
 }
 
-/* line 170, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .button {
   background: #f5a623;
   color: #ffffff;
@@ -219,30 +219,30 @@ nav img {
   text-align: center;
 }
 
-/* line 178, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .grid-sizer {
   width: 20%;
 }
 @media screen and (max-width: 1200px) {
-  /* line 178, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .grid-sizer {
     width: 33.33%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 178, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .grid-sizer {
     width: 50%;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 178, ../sass/style.scss */
+  /* line 177, ../sass/style.scss */
   .grid-sizer {
     width: 100%;
   }
 }
 
-/* line 194, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .item {
   position: relative;
   width: 20%;
@@ -251,19 +251,19 @@ nav img {
   text-align: center;
 }
 @media screen and (max-width: 1200px) {
-  /* line 194, ../sass/style.scss */
+  /* line 193, ../sass/style.scss */
   .item {
     width: 33.33%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 194, ../sass/style.scss */
+  /* line 193, ../sass/style.scss */
   .item {
     width: 50%;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 194, ../sass/style.scss */
+  /* line 193, ../sass/style.scss */
   .item {
     width: 100%;
     padding: 0;
@@ -271,19 +271,19 @@ nav img {
   }
 }
 
-/* line 217, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .image {
   display: block;
   margin: 0;
   width: 100%;
 }
 
-/* line 223, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .image:after {
   clear: both;
 }
 
-/* line 227, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .mcontainer {
   clear: both;
   position: relative;
@@ -291,20 +291,20 @@ nav img {
   padding-bottom: 9em;
 }
 @media screen and (max-width: 600px) {
-  /* line 227, ../sass/style.scss */
+  /* line 226, ../sass/style.scss */
   .mcontainer {
     top: 5em;
   }
 }
 
-/* line 238, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 #loggedin {
   position: relative;
   top: 4em;
   clear: both;
 }
 
-/* line 244, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .phototitle, .photoauthor {
   font-size: .875em;
   color: #787878;
@@ -313,17 +313,17 @@ nav img {
   letter-spacing: 1px;
 }
 
-/* line 252, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .photoauthor {
   margin-top: .3em;
 }
 
-/* line 256, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .phototitle {
   margin-top: 1em;
 }
 
-/* line 260, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .large-title {
   font-size: 2.25em;
   color: #575757;
@@ -332,6 +332,7 @@ nav img {
   text-align: center;
   font-weight: 700;
   margin: 2em 0 0 0;
+  text-transform: uppercase;
 }
 
 /* line 270, ../sass/style.scss */
@@ -348,7 +349,7 @@ label {
 }
 
 /* line 282, ../sass/style.scss */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], textarea {
   background-color: transparent;
   border: 1px solid #787878;
   color: #787878;
@@ -361,28 +362,30 @@ input[type=text], input[type=password] {
 }
 
 /* line 294, ../sass/style.scss */
-input[type=submit] {
-  -webkit-appearance: none;
+input[type=text].description {
+  padding-bottom: 5em;
+  word-wrap: break-word;
 }
 
-/* line 298, ../sass/style.scss */
-input[type=text]:focus, input[type=password]:focus {
+/* line 299, ../sass/style.scss */
+input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=file]:focus, input[type=search]:focus, .signups-input:focus, input[type=submit]:focus {
   border: 1px solid #f5a623;
+  outline: none;
 }
 
-/* line 301, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .input {
   text-align: center;
 }
 
-/* line 305, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 #input-container {
   margin: 0 auto;
   padding: 2.5em 1em 0 1em;
   width: 400px;
 }
 
-/* line 311, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .search {
   font-family: 'Lato', sans-serif;
   font-size: .8em;
@@ -393,7 +396,7 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* line 321, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .submit {
   border: 0 none;
   font-family: 'Lato', sans-serif;
@@ -404,80 +407,80 @@ input[type=text]:focus, input[type=password]:focus {
   padding-right: 1em;
 }
 
-/* line 331, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .edit-profile {
   margin-top: 0.3em;
 }
 
-/* line 335, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 .sign-in {
   margin-top: 1.5em;
 }
 
-/* line 339, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 .biography {
   padding: 1em .3em 1em .3em;
 }
 
-/* line 343, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .profile {
   padding: 5em 0 0 1em;
   width: 500px;
 }
 @media screen and (max-width: 600px) {
-  /* line 343, ../sass/style.scss */
+  /* line 346, ../sass/style.scss */
   .profile {
-    padding: 2em 0 0 0;
+    padding: 5em 0 0 0;
     width: 400px;
   }
 }
 
-/* line 352, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .profile img {
   float: left;
 }
 @media screen and (max-width: 600px) {
-  /* line 352, ../sass/style.scss */
+  /* line 356, ../sass/style.scss */
   .profile img {
     padding: 0em 0em 0em 0em;
   }
 }
 
-/* line 360, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 .profile-bio, .location, .profile-name {
   margin-left: 1em;
   font-weight: 400;
 }
 
-/* line 366, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .location {
   color: #BBBBBB;
   line-height: 1.3em;
 }
 
-/* line 371, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .profile-bio {
   line-height: 2em;
 }
 
-/* line 375, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 .profile-name {
   font-size: 1.3em;
   margin-left: .8em;
 }
 
-/* line 380, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 nav a, nav a:visited {
   color: #787878;
   text-decoration: none;
 }
 
-/* line 385, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 nav a:hover, nav a:visited:hover {
   color: #f5a623;
 }
 
-/* line 389, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 .menu-btn div {
   position: absolute;
   left: 100%;
@@ -491,7 +494,7 @@ nav a:hover, nav a:visited:hover {
   z-index: 99;
 }
 
-/* line 402, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .menu-btn span {
   display: block;
   width: 19px;
@@ -501,17 +504,17 @@ nav a:hover, nav a:visited:hover {
   z-index: 99;
 }
 
-/* line 411, ../sass/style.scss */
+/* line 415, ../sass/style.scss */
 .responsive-menu {
   display: none;
 }
 
-/* line 415, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 .expand {
   display: block !important;
 }
 
-/* line 419, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 .add-new {
   background: #f5a623;
   color: #ffffff;
@@ -530,8 +533,47 @@ nav a:hover, nav a:visited:hover {
   text-transform: uppercase;
 }
 @media screen and (max-width: 600px) {
-  /* line 419, ../sass/style.scss */
+  /* line 423, ../sass/style.scss */
   .add-new {
     width: 220px;
   }
+}
+
+/* line 445, ../sass/style.scss */
+input[type=file] {
+  background-color: transparent;
+  color: #787878;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  outline: 1px #f5a623;
+  padding: .5em .5em .5em .5em;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 456, ../sass/style.scss */
+input[type=search] {
+  background-color: transparent;
+  border: 1px solid #BBBBBB;
+  color: #787878;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  outline: 1px #f5a623;
+  padding: .5em .5em .5em 1.5em;
+  width: 10em;
+  text-align: left;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: .5em .7em;
+  border-radius: .5em;
+}
+
+/* line 472, ../sass/style.scss */
+.log-in {
+  margin-top: 0.5em;
+}
+
+/* line 476, ../sass/style.scss */
+textarea {
+  height: 10em;
 }

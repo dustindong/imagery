@@ -33,7 +33,7 @@
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
     .mobile-menu #menu {
       display: none;
     }
@@ -43,7 +43,7 @@
     }
 
     .mobile-menu img {
-      display: none;
+      padding: 0 0 0 1em;
     }
 
     .logo {

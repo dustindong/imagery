@@ -27,17 +27,19 @@
       </ul>
       </nav>
     </div>
-    <h1 class="large-title">EDIT PROFILE</h1>
+    <h1 class="large-title">New Post</h1>
     <div id="input-container">
-      <form action="../profile/">
-        <label for="username">Username</label>
-        <input class="input edit-profile" name="username" type="text" placeholder="worldonpase">
-        <label for="email">Email</label>
-        <input class="input edit-profile" name="email" type="text" placeholder="dustin@worldonpause.com">
-        <label for="location">Location</label>
-        <input class="input edit-profile" name="location" type="text" placeholder="New York, NY">
-        <label for="location">Biography</label>
-        <input class="input edit-profile biography" name="biography" type="text" placeholder="product designer | photographer"  maxlength="100">
+      <form action="../homepage/">
+        <label for="description">Description</label>
+        <textarea name="description"></textarea>
+        <label for="process">Process</label>
+        <textarea name="process"></textarea>
+        <label for="software">Software</label>
+        <textarea name="software"></textarea>
+        <label for="before-edit">Before Edit</label>
+        <input class="input edit-profile biography" name="before-edit" type="file">
+        <label for="after-edit">After Edit</label>
+        <input class="input edit-profile biography" name="after-edit" type="file">
         <input type="submit" value="SUBMIT" class="signups-input">
       </form>
     </div>
