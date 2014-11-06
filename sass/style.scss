@@ -520,12 +520,19 @@ textarea {
 
 .details-title, .details-user {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
+
+  @media screen and (max-width:1250px) {
+    font-size: 1.5em;
+  }
+
 }
 
 .details-title {
-  padding-top: 1.3em;
-  color: $grey
+  padding-top: .5em;
+  color: $grey;
+  font-weight: 400;
+  font-size: 2.5em;
 }
 
 .details-user {
@@ -537,32 +544,58 @@ h3 .details-user {
   text-decoration: none;
 }
 
-.exif, .photo-description {
+.exif, .photo-description, .process-description {
   text-transform: uppercase;
   color: $darkgrey;
-  font-size: 2.5em;
-  padding-left: 1em;
+  font-size: 1.8em;
+  padding: 1em 1em 1em 1em;
   font-weight: 400;
+  letter-spacing: 2px;
+
+  @media screen and (max-width:1060px) {
+    font-size: 1.5em;
+  }
 }
 
 .exif {
   float: left;
   width: 33.33%;
-  clear: both;
+  height: 1000px;
+
+  @media screen and (max-width:750px) {
+    width: 100%;
+    float: none;
+    height: 100%;
+  }
 }
 
-.photo-description {
-  width: 66.67%;
+.photo-description, .process-description {
+  width: 90%;
 }
 
 .photo-details-container {
   background-color: lighten($lightgrey, 20%);
-  margin-top: 7em;
+  margin-top: 2em;
 }
 
 .camera-details-title {
   margin-top: 5em;
-  clear: both;
   font-size: .5em;
   display: block;
+}
+
+.exif-details {
+  font-weight: 300;
+  margin-left: .2em;
+}
+
+.exif p, .photo-description p, .process-description p, {
+  margin-top: 2em;
+  font-size: .6em;
+}
+
+.photo-description p, .process-description p {
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.4em;
 }
