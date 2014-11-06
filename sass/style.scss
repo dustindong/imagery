@@ -9,6 +9,10 @@ $grey: #787878;
 $lightgrey: #BBBBBB;
 $darkgrey: #575757;
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   padding-bottom: 30em;
 }
@@ -19,12 +23,12 @@ html {
   font-weight: 300;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 img {
   max-width: 100%;
+}
+
+nav img {
+  padding: 2em 0 0 .8em;
 }
 
 .cf:before,
@@ -39,41 +43,36 @@ img {
 
 .logo {
   list-style-type: none;
+  height: 4.375em;
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 4.375em;
 
   li {
-  display: inline-block;
   color: $grey;
+  display: inline-block;
   font-size: 1.125em;
-  padding-right: 1em;
   font-weight: 400;
+  padding-right: 1em;
   text-transform: uppercase;
 }
 
   ul {
-  text-align: right;
-  position: relative;
   margin-top: -2.5em;
+  position: relative;
+  text-align: right;
   }
 
 }
 
-
-nav img {
-  padding: 2em 0 0 .8em;
-}
-
 .discover, .share, .connect {
+  color: $grey;
+  display: inline-block;
+  line-height: 1.2em;
   padding: 6em 2em 2em 0em;
   text-align: center;
-  line-height: 1.2em;
-  color: $grey;
-  width: 20%;
-  display: inline-block;
   vertical-align: top;
+  width: 20%;
 
   h1 {
     text-transform: uppercase;
@@ -88,10 +87,10 @@ nav img {
   }
 
   @media only screen and (max-width: 600px) {
-  width: 100%;
-  text-align: left;
-  padding: 3em 1em 1em 1em;
   line-height: 1.2em;
+  padding: 3em 1em 1em 1em;
+  text-align: left;
+  width: 100%;
   }
 }
 
@@ -100,11 +99,11 @@ nav img {
 }
 
 .reasons h1 {
-  font-size: 1.125em;
   color: $orange;
-  line-height: 22px;
-  letter-spacing: 2px;
+  font-size: 1.125em;
   font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 22px;
 }
 
 #container {
@@ -127,19 +126,19 @@ padding-bottom: 2em;
 
 .signups {
   background: $orange;
+  clear: both;
   color: #ffffff;
   display: block;
   font-size: 1.125em;
-  margin: 0 auto;
-  width: 14em;
-  padding: 1.18125em 0 1.18125em 0;
-  text-decoration: none;
-  text-align: center;
-  clear: both;
-  position: relative;
-  top: 2em;
   font-weight: 400;
+  margin: 0 auto;
+  padding: 1.18125em 0 1.18125em 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
+  top: 2em;
+  width: 14em;
 }
 
 .signups:hover, .signups:visited:hover, .signups-input:hover, .signups-input:visited:hover, .add-new:hover, .add-new:visited:hover {
@@ -147,21 +146,21 @@ padding-bottom: 2em;
 }
 
 .signups-input {
+  -webkit-apperance: none;
   background: $orange;
+  border: 0 none;
   color: #ffffff;
+  cursor:pointer;
   display: block;
   font-size: 1.125em;
-  width: 100%;
-  padding: 1.18125em 0 1.18125em 0;
-  text-decoration: none;
-  text-align: center;
-  border: 0 none;
-  margin-top: 3em;
   font-weight: 300;
   letter-spacing: 1px;
   margin-bottom: 4em;
-  cursor:pointer;
-  -webkit-apperance: none;
+  margin-top: 3em;
+  padding: 1.18125em 0 1.18125em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
     @media screen and (max-width:600px) {
     margin-bottom: 1em;
   }
@@ -171,8 +170,8 @@ padding-bottom: 2em;
   background: $orange;
   color: #ffffff;
   display: block;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
 }
 
 .grid-sizer {
@@ -192,11 +191,11 @@ padding-bottom: 2em;
 }
 
 .item {
-  position: relative;
-  width: 20%;
   float: left;
   padding: 1em;
+  position: relative;
   text-align: center;
+  width: 20%;
 
   @media screen and (max-width:1200px) {
     width: 33.33%;
@@ -226,9 +225,9 @@ padding-bottom: 2em;
 
 .mcontainer {
   clear: both;
+  padding-bottom: 9em;
   position: relative;
   top: 9em;
-  padding-bottom: 9em;
 
   @media screen and (max-width:600px) {
     top: 5em;
@@ -236,17 +235,17 @@ padding-bottom: 2em;
 }
 
 #loggedin {
+  clear: both;
   position: relative;
   top: 4em;
-  clear: both;
 }
 
 .phototitle, .photoauthor {
-font-size: .875em;
 color: $grey;
-line-height: 1em;
 display: inline-block;
+font-size: .875em;
 letter-spacing: 1px;
+line-height: 1em;
 }
 
 .photoauthor {
@@ -258,13 +257,13 @@ letter-spacing: 1px;
 }
 
 .large-title {
-font-size: 2.25em;
 color: $darkgrey;
-line-height: 1.5em;
-letter-spacing: 2px;
-text-align: center;
+font-size: 2.25em;
 font-weight: 700;
+letter-spacing: 2px;
+line-height: 1.5em;
 margin: 2em 0 0 0;
+text-align: center;
 text-transform: uppercase;
 }
 
@@ -275,9 +274,9 @@ label {
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 24px;
-  text-align: center;
   padding-bottom: .5em;
   padding-top: 2em;
+  text-align: center;
 }
 
 input[type=text], input[type=password], textarea {
@@ -288,8 +287,8 @@ input[type=text], input[type=password], textarea {
   font-size: 1.2em;
   outline: 1px $orange;
   padding: .5em .5em .5em .5em;
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 input[type=text].description {
@@ -313,21 +312,21 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=f
 }
 
 .search {
-  font-family: 'Lato', sans-serif;
-  font-size: .8em;
   border: 0 none;
   border-bottom: 1px solid $lightgrey;
   color: $grey;
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
   font-weight: 300;
   outline: none;
   }
 
 .submit {
-  border: 0 none;
-  font-family:  'Lato', sans-serif;
-  color: $grey;
-  background-color: transparent;
   background: url(../images/search.png) no-repeat left;
+  background-color: transparent;
+  border: 0 none;
+  color: $grey;
+  font-family:  'Lato', sans-serif;
   outline: none;
   padding-right: 1em;
 }
@@ -363,8 +362,8 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=f
 }
 
 .profile-bio, .location, .profile-name {
-  margin-left: 1em;
   font-weight: 400;
+  margin-left: 1em;
 
 }
 
@@ -392,24 +391,24 @@ nav a:hover, nav a:visited:hover, .details-user a:hover, .details-user a:visited
 }
 
 .menu-btn div {
- position: absolute;
- left: 100%;
- top: 64%;
- padding-right: 8px;
- margin-top: -0.50em;
- line-height: 1.2;
  font-size: 18px;
  font-weight: 200;
+ left: 100%;
+ line-height: 1.2;
+ margin-top: -0.50em;
+ padding-right: 8px;
+ position: absolute;
+ top: 64%;
  vertical-align: middle;
  z-index: 99;
 }
 
 .menu-btn span {
+ background: rgb(0,0,0);
  display: block;
- width: 19px;
  height: 3px;
  margin: 4px 0;
- background: rgb(0,0,0);
+ width: 19px;
  z-index: 99;
 }
 
@@ -423,20 +422,20 @@ nav a:hover, nav a:visited:hover, .details-user a:hover, .details-user a:visited
 
 .add-new {
   background: $orange;
+  border: 0 none;
   color: #ffffff;
+  cursor:pointer;
   display: block;
   font-size: 1em;
-  width: 250px;
+  letter-spacing: 1px;
   margin-left: 10.3em;
   margin-top: 2.7em;
   padding: .5em 0 .5em 0;
-  text-decoration: none;
   text-align: center;
-  border: 0 none;
-  weight: 300;
-  letter-spacing: 1px;
-  cursor:pointer;
+  text-decoration: none;
   text-transform: uppercase;
+  weight: 300;
+  width: 250px;
 
   @media screen and (max-width:600px) {
     width: 220px;
@@ -450,25 +449,25 @@ input[type=file] {
   font-size: 1em;
   outline: 1px $orange;
   padding: .5em .5em .5em .5em;
-  width: 100%;
   text-align: left;
+  width: 100%;
 }
 
 input[type=search] {
   background-color: transparent;
-  border: 1px solid $lightgrey;
-  color: $grey;
-  font-family: 'Lato', sans-serif;
-  font-size: .8em;
-  outline: 1px $orange;
-  padding: .5em .5em .5em 1.8em;
-  width: 10em;
-  text-align: left;
   background-image: url("../images/search.png");
   background-repeat: no-repeat;
   background-position: .5em .5em;
+  border: 1px solid $lightgrey;
   border-radius: .5em;
+  color: $grey;
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
   margin-bottom: .3em;
+  outline: 1px $orange;
+  padding: .5em .5em .5em 1.8em;
+  text-align: left;
+  width: 10em;
 }
 
 .log-in {
@@ -485,9 +484,9 @@ textarea {
 
 .full-size-photo {
   background-image: url(../images/photo-before.jpg);
-  background-size:   cover;
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size:   cover;
   height: 960px;
   margin-top: 3em;
   max-width: 100%;
@@ -496,7 +495,7 @@ textarea {
   height: 800px;
   }
 
-  @media screen and (max-width:800px){
+  @media screen and (max-width:1000px){
   height: 667px;
   }
 
@@ -519,20 +518,27 @@ textarea {
 }
 
 .details-title, .details-user {
-  text-align: center;
   font-size: 1.8em;
+  text-align: center;
 
-  @media screen and (max-width:1250px) {
-    font-size: 1.5em;
+  @media screen and (max-width:1000px) {
+    font-size: 1.7em;
   }
 
+  @media screen and (max-width:800px) {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width:600px) {
+    font-size: 1.5em;
+  }
 }
 
 .details-title {
-  padding-top: .5em;
   color: $grey;
-  font-weight: 400;
   font-size: 2.5em;
+  font-weight: 400;
+  padding-top: .5em;
 }
 
 .details-user {
@@ -545,24 +551,32 @@ h3 .details-user {
 }
 
 .exif, .photo-description, .process-description {
-  text-transform: uppercase;
   color: $darkgrey;
   font-size: 1.8em;
-  padding: 1em 1em 1em 1em;
   font-weight: 400;
   letter-spacing: 2px;
+  padding: 1em 1em 1em 1em;
+  text-transform: uppercase;
 
-  @media screen and (max-width:1060px) {
+  @media screen and (max-width:1000px) {
+    font-size: 1.7em;
+  }
+
+  @media screen and (max-width:800px) {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width:600px) {
     font-size: 1.5em;
   }
 }
 
 .exif {
   float: left;
+  height: 100%;
   width: 33.33%;
-  height: 1000px;
 
-  @media screen and (max-width:750px) {
+  @media screen and (max-width:800px) {
     width: 100%;
     float: none;
     height: 100%;
@@ -570,18 +584,25 @@ h3 .details-user {
 }
 
 .photo-description, .process-description {
-  width: 90%;
+  float: right;
+  width: 66%;
+
+    @media screen and (max-width:800px) {
+      width: 100%;
+      float: none;
+    }
 }
 
 .photo-details-container {
   background-color: lighten($lightgrey, 20%);
+  height: auto;
   margin-top: 2em;
 }
 
 .camera-details-title {
-  margin-top: 5em;
-  font-size: .5em;
   display: block;
+  font-size: .5em;
+  margin-top: 5em;
 }
 
 .exif-details {
@@ -590,12 +611,12 @@ h3 .details-user {
 }
 
 .exif p, .photo-description p, .process-description p, {
-  margin-top: 2em;
   font-size: .6em;
+  margin-top: 2em;
 }
 
 .photo-description p, .process-description p {
   font-weight: 300;
-  text-transform: none;
   line-height: 1.4em;
+  text-transform: none;
 }
