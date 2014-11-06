@@ -382,12 +382,12 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=f
   margin-left: .8em;
 }
 
-nav a, nav a:visited {
+nav a, nav a:visited, .details-user a {
   color: $grey;
   text-decoration: none;
 }
 
-nav a:hover, nav a:visited:hover {
+nav a:hover, nav a:visited:hover, .details-user a:hover, .details-user a:visited:hover {
   color: $orange;
 }
 
@@ -484,9 +484,85 @@ textarea {
 }
 
 .full-size-photo {
-  background-image: url(../images/photo-after.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background-image: url(../images/photo-before.jpg);
+  background-size:   cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 960px;
   margin-top: 3em;
+  max-width: 100%;
+
+  @media screen and (max-width:1200px){
+  height: 800px;
+  }
+
+  @media screen and (max-width:800px){
+  height: 667px;
+  }
+
+  @media screen and (max-width:800px){
+  height: 533px;
+  }
+
+  @media screen and (max-width:600px){
+  height: 400px;
+  }
+
+  @media screen and (max-width:400px){
+  height: 267px;
+  }
+
+}
+
+.full-size-photo:hover {
+  background-image: url(../images/photo-after.jpg);
+}
+
+.details-title, .details-user {
+  text-align: center;
+  font-size: 2em;
+}
+
+.details-title {
+  padding-top: 1.3em;
+  color: $grey
+}
+
+.details-user {
+  padding-top: .2em;
+  text-decoration: none;
+}
+
+h3 .details-user {
+  text-decoration: none;
+}
+
+.exif, .photo-description {
+  text-transform: uppercase;
+  color: $darkgrey;
+  font-size: 2.5em;
+  padding-left: 1em;
+  font-weight: 400;
+}
+
+.exif {
+  float: left;
+  width: 33.33%;
+  clear: both;
+}
+
+.photo-description {
+  width: 66.67%;
+}
+
+.photo-details-container {
+  background-color: lighten($lightgrey, 20%);
+  margin-top: 7em;
+}
+
+.camera-details-title {
+  margin-top: 5em;
+  clear: both;
+  font-size: .5em;
+  display: block;
 }

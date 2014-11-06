@@ -470,13 +470,13 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=f
 }
 
 /* line 385, ../sass/style.scss */
-nav a, nav a:visited {
+nav a, nav a:visited, .details-user a {
   color: #787878;
   text-decoration: none;
 }
 
 /* line 390, ../sass/style.scss */
-nav a:hover, nav a:visited:hover {
+nav a:hover, nav a:visited:hover, .details-user a:hover, .details-user a:visited:hover {
   color: #f5a623;
 }
 
@@ -586,9 +586,104 @@ textarea {
 
 /* line 486, ../sass/style.scss */
 .full-size-photo {
-  background-image: url(../images/photo-after.jpg);
+  background-image: url(../images/photo-before.jpg);
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 960px;
   margin-top: 3em;
+  max-width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  /* line 486, ../sass/style.scss */
+  .full-size-photo {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 486, ../sass/style.scss */
+  .full-size-photo {
+    height: 667px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 486, ../sass/style.scss */
+  .full-size-photo {
+    height: 533px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 486, ../sass/style.scss */
+  .full-size-photo {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 486, ../sass/style.scss */
+  .full-size-photo {
+    height: 267px;
+  }
+}
+
+/* line 517, ../sass/style.scss */
+.full-size-photo:hover {
+  background-image: url(../images/photo-after.jpg);
+}
+
+/* line 521, ../sass/style.scss */
+.details-title, .details-user {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* line 526, ../sass/style.scss */
+.details-title {
+  padding-top: 1.3em;
+  color: #787878;
+}
+
+/* line 531, ../sass/style.scss */
+.details-user {
+  padding-top: .2em;
+  text-decoration: none;
+}
+
+/* line 536, ../sass/style.scss */
+h3 .details-user {
+  text-decoration: none;
+}
+
+/* line 540, ../sass/style.scss */
+.exif, .photo-description {
+  text-transform: uppercase;
+  color: #575757;
+  font-size: 2.5em;
+  padding-left: 1em;
+  font-weight: 400;
+}
+
+/* line 548, ../sass/style.scss */
+.exif {
+  float: left;
+  width: 33.33%;
+  clear: both;
+}
+
+/* line 554, ../sass/style.scss */
+.photo-description {
+  width: 66.67%;
+}
+
+/* line 558, ../sass/style.scss */
+.photo-details-container {
+  background-color: #eeeeee;
+  margin-top: 7em;
+}
+
+/* line 563, ../sass/style.scss */
+.camera-details-title {
+  margin-top: 5em;
+  clear: both;
+  font-size: .5em;
+  display: block;
 }
