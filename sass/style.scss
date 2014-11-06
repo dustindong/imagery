@@ -146,7 +146,7 @@ padding-bottom: 2em;
 }
 
 .signups-input {
-  -webkit-apperance: none;
+  -webkit-appearance: none;
   background: $orange;
   border: 0 none;
   color: #ffffff;
@@ -490,6 +490,7 @@ textarea {
   height: 960px;
   margin-top: 3em;
   max-width: 100%;
+  transition: all 1.5s ease-in-out;
 
   @media screen and (max-width:1200px){
   height: 800px;
@@ -620,3 +621,4 @@ h3 .details-user {
   line-height: 1.4em;
   text-transform: none;
 }
+

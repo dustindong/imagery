@@ -187,7 +187,7 @@ nav img {
 
 /* line 148, ../sass/style.scss */
 .signups-input {
-  -webkit-apperance: none;
+  -webkit-appearance: none;
   background: #f5a623;
   border: 0 none;
   color: #ffffff;
@@ -593,6 +593,7 @@ textarea {
   height: 960px;
   margin-top: 3em;
   max-width: 100%;
+  transition: all 1.5s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   /* line 485, ../sass/style.scss */
@@ -625,36 +626,36 @@ textarea {
   }
 }
 
-/* line 516, ../sass/style.scss */
+/* line 517, ../sass/style.scss */
 .full-size-photo:hover {
   background-image: url(../images/photo-after.jpg);
 }
 
-/* line 520, ../sass/style.scss */
+/* line 521, ../sass/style.scss */
 .details-title, .details-user {
   font-size: 1.8em;
   text-align: center;
 }
 @media screen and (max-width: 1000px) {
-  /* line 520, ../sass/style.scss */
+  /* line 521, ../sass/style.scss */
   .details-title, .details-user {
     font-size: 1.7em;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 520, ../sass/style.scss */
+  /* line 521, ../sass/style.scss */
   .details-title, .details-user {
     font-size: 1.6em;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 520, ../sass/style.scss */
+  /* line 521, ../sass/style.scss */
   .details-title, .details-user {
     font-size: 1.5em;
   }
 }
 
-/* line 537, ../sass/style.scss */
+/* line 538, ../sass/style.scss */
 .details-title {
   color: #787878;
   font-size: 2.5em;
@@ -662,18 +663,18 @@ textarea {
   padding-top: .5em;
 }
 
-/* line 544, ../sass/style.scss */
+/* line 545, ../sass/style.scss */
 .details-user {
   padding-top: .2em;
   text-decoration: none;
 }
 
-/* line 549, ../sass/style.scss */
+/* line 550, ../sass/style.scss */
 h3 .details-user {
   text-decoration: none;
 }
 
-/* line 553, ../sass/style.scss */
+/* line 554, ../sass/style.scss */
 .exif, .photo-description, .process-description {
   color: #575757;
   font-size: 1.8em;
@@ -683,32 +684,32 @@ h3 .details-user {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1000px) {
-  /* line 553, ../sass/style.scss */
+  /* line 554, ../sass/style.scss */
   .exif, .photo-description, .process-description {
     font-size: 1.7em;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 553, ../sass/style.scss */
+  /* line 554, ../sass/style.scss */
   .exif, .photo-description, .process-description {
     font-size: 1.6em;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 553, ../sass/style.scss */
+  /* line 554, ../sass/style.scss */
   .exif, .photo-description, .process-description {
     font-size: 1.5em;
   }
 }
 
-/* line 574, ../sass/style.scss */
+/* line 575, ../sass/style.scss */
 .exif {
   float: left;
   height: 100%;
   width: 33.33%;
 }
 @media screen and (max-width: 800px) {
-  /* line 574, ../sass/style.scss */
+  /* line 575, ../sass/style.scss */
   .exif {
     width: 100%;
     float: none;
@@ -716,46 +717,46 @@ h3 .details-user {
   }
 }
 
-/* line 586, ../sass/style.scss */
+/* line 587, ../sass/style.scss */
 .photo-description, .process-description {
   float: right;
   width: 66%;
 }
 @media screen and (max-width: 800px) {
-  /* line 586, ../sass/style.scss */
+  /* line 587, ../sass/style.scss */
   .photo-description, .process-description {
     width: 100%;
     float: none;
   }
 }
 
-/* line 596, ../sass/style.scss */
+/* line 597, ../sass/style.scss */
 .photo-details-container {
   background-color: #eeeeee;
   height: auto;
   margin-top: 2em;
 }
 
-/* line 602, ../sass/style.scss */
+/* line 603, ../sass/style.scss */
 .camera-details-title {
   display: block;
   font-size: .5em;
   margin-top: 5em;
 }
 
-/* line 608, ../sass/style.scss */
+/* line 609, ../sass/style.scss */
 .exif-details {
   font-weight: 300;
   margin-left: .2em;
 }
 
-/* line 613, ../sass/style.scss */
+/* line 614, ../sass/style.scss */
 .exif p, .photo-description p, .process-description p {
   font-size: .6em;
   margin-top: 2em;
 }
 
-/* line 618, ../sass/style.scss */
+/* line 619, ../sass/style.scss */
 .photo-description p, .process-description p {
   font-weight: 300;
   line-height: 1.4em;
