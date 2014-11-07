@@ -487,10 +487,11 @@ textarea {
   background-position: center center;
   background-repeat: no-repeat;
   background-size:   cover;
-  height: 960px;
+  height: 100vh;
   margin-top: 3em;
-  max-width: 100%;
+  width: 100%;
   transition: all 1.5s ease-in-out;
+
 
   @media screen and (max-width:1200px){
   height: 800px;
@@ -586,7 +587,7 @@ h3 .details-user {
 
 .photo-description, .process-description {
   float: right;
-  width: 66%;
+  width: 60%;
 
     @media screen and (max-width:800px) {
       width: 100%;
