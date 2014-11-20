@@ -13,22 +13,25 @@
 <body>
 
   <div id="container">
-    <div class="logo">
+
+    <header class="logo">
       <nav class="mobile-menu">
-      <img src="../images/logo.png">
-      <ul id="menu">
-        <li><a href="../homepage">HOME</a></li>
-        <li><a href="../newpost">NEW POST</a></li>
-        <li><a href="../profile">PROFILE</a></li>
-        <li><a href="../index.html">LOG OUT</a></li>
-        <li><form action="../profile/">
-            <input class="input edit-profile" name="search" type="search" placeholder="Search User">
-            </form></li>
-      </ul>
+        <img src="../images/logo.png">
+        <ul id="menu">
+          <li><a href="../homepage">HOME</a></li>
+          <li><a href="../newpost">NEW POST</a></li>
+          <li><a href="../profile">PROFILE</a></li>
+          <li><a href="../index.html">LOG OUT</a></li>
+          <li><form action="../profile/">
+              <input class="input edit-profile" name="search" type="search" placeholder="Search User">
+              </form></li>
+        </ul>
       </nav>
-    </div>
+    </header>
+
     <h1 class="large-title">EDIT PROFILE</h1>
-    <div id="input-container">
+
+    <section id="input-container">
       <form action="../profile/">
         <label for="username">Username</label>
         <input class="input edit-profile" name="username" type="text" placeholder="worldonpase">
@@ -40,7 +43,8 @@
         <input class="input edit-profile biography" name="biography" type="text" placeholder="product designer | photographer"  maxlength="100">
         <input type="submit" value="SUBMIT" class="signups-input">
       </form>
-    </div>
+    </section>
+
   </div>
 
   <script src="../js/jquery.js"></script>

@@ -241,11 +241,11 @@ padding-bottom: 2em;
 }
 
 .phototitle, .photoauthor {
-color: $grey;
-display: inline-block;
-font-size: .875em;
-letter-spacing: 1px;
-line-height: 1em;
+  color: $grey;
+  display: inline-block;
+  font-size: .875em;
+  letter-spacing: 1px;
+  line-height: 1em;
 }
 
 .photoauthor {
@@ -257,14 +257,14 @@ line-height: 1em;
 }
 
 .large-title {
-color: $darkgrey;
-font-size: 2.25em;
-font-weight: 700;
-letter-spacing: 2px;
-line-height: 1.5em;
-margin: 2em 0 0 0;
-text-align: center;
-text-transform: uppercase;
+  color: $darkgrey;
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin: 2em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 label {

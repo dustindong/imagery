@@ -13,7 +13,8 @@
 <body>
 
   <div id="container">
-    <div class="logo">
+
+    <header class="logo">
       <nav class="mobile-menu">
       <img src="../images/logo.png">
       <ul id="menu">
@@ -26,17 +27,19 @@
             </form></li>
       </ul>
       </nav>
-    </div>
-    <div class="profile">
-    <img src="../images/profile.png">
-    <span class="profile-name">worldonpause</span><br>
-    <span class="location">new york, ny</span><br>
-    <span class="profile-bio">product designer | photographer</span>
-    <form action="../editprofile/">
-    <input type="submit" value="edit profile" class="add-new">
-    </form>
-    </div>
-    <div id="loggedin">
+    </header>
+
+    <section class="profile">
+      <img src="../images/profile.png">
+      <span class="profile-name">worldonpause</span><br>
+      <span class="location">new york, ny</span><br>
+      <span class="profile-bio">product designer | photographer</span>
+      <form action="../editprofile/">
+      <input type="submit" value="edit profile" class="add-new">
+      </form>
+    </section>
+
+    <section id="loggedin">
       <div class="grid-sizer">
       </div>
       <div class="item" class="image">
@@ -89,7 +92,6 @@
         <span class="phototitle">GOT AWAY</span><br>
         <span class="photoauthor">volkan_oimez</span><br>
       </div>
-
       <div class="item" class="image">
         <img src="../images/cover/photo11.jpg">
         <span class="phototitle">GOT AWAY</span><br>
@@ -140,8 +142,8 @@
         <span class="phototitle">GOT AWAY</span><br>
         <span class="photoauthor">volkan_oimez</span><br>
       </div>
+   </section>
 
-    </div>
   </div>
 
   <script src="../js/jquery.js"></script>

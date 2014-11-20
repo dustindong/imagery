@@ -13,21 +13,23 @@
 <body>
 
   <div id="container">
-    <div class="logo">
+
+    <header class="logo">
       <nav class="mobile-menu">
-      <img src="../images/logo.png">
-      <ul id="menu">
-        <li><a href="../homepage">HOME</a></li>
-        <li><a href="../newpost">NEW POST</a></li>
-        <li><a href="../profile">PROFILE</a></li>
-        <li><a href="../index.html">LOG OUT</a></li>
-        <li><form action="../profile/">
-            <input class="input edit-profile search" name="search" type="search" placeholder="Search User">
-            </form></li>
-      </ul>
+        <img src="../images/logo.png">
+        <ul id="menu">
+          <li><a href="../homepage">HOME</a></li>
+          <li><a href="../newpost">NEW POST</a></li>
+          <li><a href="../profile">PROFILE</a></li>
+          <li><a href="../index.html">LOG OUT</a></li>
+          <li><form action="../profile/">
+              <input class="input edit-profile search" name="search" type="search" placeholder="Search User">
+              </form></li>
+        </ul>
       </nav>
-    </div>
-    <div id="loggedin">
+    </header>
+
+    <section id="loggedin">
       <div class="grid-sizer">
       </div>
       <div class="item" class="image">
@@ -80,7 +82,6 @@
         <span class="phototitle">GOT AWAY</span><br>
         <span class="photoauthor">volkan_oimez</span><br>
       </div>
-
       <div class="item" class="image">
         <img src="../images/cover/photo11.jpg">
         <span class="phototitle">GOT AWAY</span><br>
@@ -131,8 +132,8 @@
         <span class="phototitle">GOT AWAY</span><br>
         <span class="photoauthor">volkan_oimez</span><br>
       </div>
+    </section>
 
-    </div>
   </div>
 
   <script src="../js/jquery.js"></script>
