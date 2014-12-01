@@ -1,113 +1,508 @@
-/*
-Error: Undefined mixin 'box-sizing'.
-        on line 3 of sass/neat/grid/_box-sizing.scss, in `box-sizing'
-        from line 3 of sass/neat/grid/_box-sizing.scss
-        from line 11 of sass/neat/_neat.scss
-        from line 1 of sass/style.scss
+*, *:before, *:after {
+  box-sizing: inherit; }
 
-1: @import "neat/neat";
-2: 
-3: $orange: #f5a623;
-4: $grey: #787878;
-5: $lightgrey: #BBBBBB;
-6: $darkgrey: #575757;
-7: 
-8: *, *:before, *:after {
+body {
+  padding-bottom: 30em; }
 
-Backtrace:
-sass/neat/grid/_box-sizing.scss:3:in `box-sizing'
-sass/neat/grid/_box-sizing.scss:3
-sass/neat/_neat.scss:11
-sass/style.scss:1
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `with_mixin'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:289:in `block (2 levels) in visit_if'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:289:in `map'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:289:in `block in visit_if'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:288:in `visit_if'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:315:in `map'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:88:in `block in with_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:88:in `with_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:315:in `map'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:88:in `block in with_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:88:in `with_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/Dustin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'box-sizing'.\A         on line 3 of sass/neat/grid/_box-sizing.scss, in `box-sizing'\A         from line 3 of sass/neat/grid/_box-sizing.scss\A         from line 11 of sass/neat/_neat.scss\A         from line 1 of sass/style.scss\A \A 1: @import \"neat/neat\";\A 2: \A 3: $orange: #f5a623;\A 4: $grey: #787878;\A 5: $lightgrey: #BBBBBB;\A 6: $darkgrey: #575757;\A 7: \A 8: *, *:before, *:after {"; }
+html {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+img {
+  max-width: 100%; }
+
+nav img {
+  padding: 2em 0 0 .8em; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+.logo {
+  list-style-type: none;
+  height: 4.375em;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .logo li {
+    color: #787878;
+    display: inline-block;
+    font-size: 1.125em;
+    font-weight: 400;
+    padding-right: 1em;
+    text-transform: uppercase; }
+  .logo ul {
+    margin-top: -2em;
+    position: relative;
+    text-align: right; }
+
+.discover, .share, .connect {
+  color: #787878;
+  display: inline-block;
+  line-height: 1.2em;
+  padding: 6em 2em 2em 0em;
+  text-align: center;
+  vertical-align: top;
+  width: 20em; }
+  .discover h1, .share h1, .connect h1 {
+    text-transform: uppercase; }
+  @media only screen and (max-width: 1200px) {
+    .discover, .share, .connect {
+      width: 25%; } }
+  @media only screen and (max-width: 800px) {
+    .discover, .share, .connect {
+      width: 33%; } }
+  @media only screen and (max-width: 600px) {
+    .discover, .share, .connect {
+      line-height: 1.2em;
+      padding: 3em 1em 1em 1em;
+      text-align: left;
+      width: 100%; } }
+
+.reasons {
+  text-align: center; }
+
+.reasons h1 {
+  color: #f5a623;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 22px; }
+
+#container {
+  max-width: 1440px; }
+
+.reasons img {
+  padding-right: .5em;
+  position: relative;
+  top: 2px; }
+
+.reasons h1 {
+  padding-bottom: 2em; }
+  @media screen and (max-width: 600px) {
+    .reasons h1 {
+      padding-bottom: 1em; } }
+
+.signups {
+  background: #f5a623;
+  clear: both;
+  color: #ffffff;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 1.18125em 0 1.18125em 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 2em;
+  width: 14em; }
+
+.signups:hover, .signups:visited:hover, .signups-input:hover, .signups-input:visited:hover, .add-new:hover, .add-new:visited:hover {
+  background: #f39c0b; }
+
+.signups-input {
+  -webkit-appearance: none;
+  background: #f5a623;
+  border: 0 none;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 4em;
+  margin-top: 3em;
+  padding: 1.18125em 0 1.18125em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%; }
+  @media screen and (max-width: 600px) {
+    .signups-input {
+      margin-bottom: 1em; } }
+
+.button {
+  background: #f5a623;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  text-decoration: none; }
+
+.grid-sizer {
+  width: 20%; }
+  @media screen and (max-width: 1200px) {
+    .grid-sizer {
+      width: 33.33%; } }
+  @media screen and (max-width: 800px) {
+    .grid-sizer {
+      width: 50%; } }
+  @media screen and (max-width: 600px) {
+    .grid-sizer {
+      width: 100%; } }
+
+.item {
+  float: left;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  width: 20%; }
+  @media screen and (max-width: 1200px) {
+    .item {
+      width: 33.33%; } }
+  @media screen and (max-width: 800px) {
+    .item {
+      width: 50%; } }
+  @media screen and (max-width: 600px) {
+    .item {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1.5em; } }
+
+.image {
+  display: block;
+  margin: 0;
+  width: 100%; }
+
+.image:after {
+  clear: both; }
+
+.mcontainer {
+  clear: both;
+  padding-bottom: 9em;
+  position: relative;
+  top: 9em; }
+  @media screen and (max-width: 600px) {
+    .mcontainer {
+      top: 5em; } }
+
+#loggedin {
+  clear: both;
+  position: relative;
+  top: 4em; }
+
+.phototitle, .photoauthor {
+  color: #787878;
+  display: inline-block;
+  font-size: .875em;
+  letter-spacing: 1px;
+  line-height: 1em; }
+
+.photoauthor {
+  margin-top: .3em; }
+
+.phototitle {
+  margin-top: 1em; }
+
+.large-title {
+  color: #575757;
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin: 2em 0 0 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+label {
+  color: #787878;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 24px;
+  padding-bottom: .5em;
+  padding-top: 2em;
+  text-align: center; }
+
+input[type=text], input[type=password], textarea {
+  background-color: transparent;
+  border: 1px solid #787878;
+  color: #787878;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  outline: 1px #f5a623;
+  padding: .5em .5em .5em .5em;
+  text-align: left;
+  width: 100%; }
+
+input[type=text].description {
+  padding-bottom: 5em;
+  word-wrap: break-word; }
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=file]:focus, input[type=search]:focus, .signups-input:focus, input[type=submit]:focus {
+  border: 1px solid #f5a623;
+  outline: none; }
+
+.input {
+  text-align: center; }
+
+#input-container {
+  margin: 0 auto;
+  padding: 2.5em 1em 0 1em;
+  width: 400px; }
+
+.search {
+  border: 0 none;
+  border-bottom: 1px solid #BBBBBB;
+  color: #787878;
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  font-weight: 300;
+  outline: none; }
+
+.submit {
+  background: url(../images/search.png) no-repeat left;
+  background-color: transparent;
+  border: 0 none;
+  color: #787878;
+  font-family: 'Lato', sans-serif;
+  outline: none;
+  padding-right: 1em; }
+
+.edit-profile {
+  margin-top: 0.3em; }
+
+.sign-in {
+  margin-top: 1.5em; }
+
+.biography {
+  padding: 1em .3em 1em .3em; }
+
+.profile {
+  padding: 5em 0 0 1em;
+  width: 500px; }
+  @media screen and (max-width: 600px) {
+    .profile {
+      padding: 5em 0 0 0;
+      width: 400px; } }
+
+.profile img {
+  float: left; }
+  @media screen and (max-width: 600px) {
+    .profile img {
+      padding: 0em 0em 0em 0em; } }
+
+.profile-bio, .location, .profile-name {
+  font-weight: 400;
+  margin-left: 1em; }
+
+.location {
+  color: #BBBBBB;
+  line-height: 1.3em; }
+
+.profile-bio {
+  line-height: 2em; }
+
+.profile-name {
+  font-size: 1.3em;
+  margin-left: .8em; }
+
+nav a, nav a:visited, .details-user a {
+  color: #787878;
+  text-decoration: none; }
+
+nav a:hover, nav a:visited:hover, .details-user a:hover, .details-user a:visited:hover {
+  color: #f5a623; }
+
+.menu-btn div {
+  font-size: 18px;
+  font-weight: 200;
+  left: 100%;
+  line-height: 1.2;
+  margin-top: -0.50em;
+  padding-right: 8px;
+  position: absolute;
+  top: 64%;
+  vertical-align: middle;
+  z-index: 99; }
+
+.menu-btn span {
+  background: black;
+  display: block;
+  height: 3px;
+  margin: 4px 0;
+  width: 19px;
+  z-index: 99; }
+
+.responsive-menu {
+  display: none; }
+
+.expand {
+  display: block !important; }
+
+.add-new {
+  background: #f5a623;
+  border: 0 none;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin-left: 10.3em;
+  margin-top: 2.7em;
+  padding: .5em 0 .5em 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  weight: 300;
+  width: 250px; }
+  @media screen and (max-width: 600px) {
+    .add-new {
+      width: 220px; } }
+
+input[type=file] {
+  background-color: transparent;
+  color: #787878;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  outline: 1px #f5a623;
+  padding: .5em .5em .5em .5em;
+  text-align: left;
+  width: 100%; }
+
+input[type=search] {
+  background-color: transparent;
+  background-image: url("../images/search.png");
+  background-repeat: no-repeat;
+  background-position: .5em .5em;
+  border: 1px solid #BBBBBB;
+  border-radius: .5em;
+  color: #787878;
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  margin-bottom: .3em;
+  outline: 1px #f5a623;
+  padding: .5em .5em .5em 1.8em;
+  text-align: left;
+  width: 10em; }
+
+.log-in {
+  margin-top: 0.3em; }
+
+textarea {
+  height: 10em; }
+
+.software {
+  height: 4em; }
+
+.full-size-photo {
+  background-image: url(../images/photo-before.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: 3em;
+  width: 100%;
+  transition: all 1.5s ease-in-out; }
+  @media screen and (max-width: 1200px) {
+    .full-size-photo {
+      height: 800px; } }
+  @media screen and (max-width: 1000px) {
+    .full-size-photo {
+      height: 667px; } }
+  @media screen and (max-width: 800px) {
+    .full-size-photo {
+      height: 533px; } }
+  @media screen and (max-width: 600px) {
+    .full-size-photo {
+      height: 400px; } }
+  @media screen and (max-width: 400px) {
+    .full-size-photo {
+      height: 267px; } }
+
+.full-size-photo:hover {
+  background-image: url(../images/photo-after.jpg); }
+
+.details-title, .details-user {
+  font-size: 1.8em;
+  text-align: center; }
+  @media screen and (max-width: 1000px) {
+    .details-title, .details-user {
+      font-size: 1.7em; } }
+  @media screen and (max-width: 800px) {
+    .details-title, .details-user {
+      font-size: 1.6em; } }
+  @media screen and (max-width: 600px) {
+    .details-title, .details-user {
+      font-size: 1.5em; } }
+
+.details-title {
+  color: #787878;
+  font-size: 2.5em;
+  font-weight: 400;
+  padding-top: .5em; }
+
+.details-user {
+  padding-top: .2em;
+  text-decoration: none; }
+
+h3 .details-user {
+  text-decoration: none; }
+
+.exif, .photo-description, .process-description {
+  color: #575757;
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1em 1em 1em 1em;
+  text-transform: uppercase; }
+  @media screen and (max-width: 1000px) {
+    .exif, .photo-description, .process-description {
+      font-size: 1.7em; } }
+  @media screen and (max-width: 800px) {
+    .exif, .photo-description, .process-description {
+      font-size: 1.6em; } }
+  @media screen and (max-width: 600px) {
+    .exif, .photo-description, .process-description {
+      font-size: 1.5em; } }
+
+.exif {
+  float: left;
+  height: 100%;
+  width: 33.33%; }
+  @media screen and (max-width: 800px) {
+    .exif {
+      width: 100%;
+      float: none;
+      height: 100%; } }
+
+.photo-description, .process-description {
+  float: right;
+  width: 60%; }
+  @media screen and (max-width: 800px) {
+    .photo-description, .process-description {
+      width: 100%;
+      float: none; } }
+
+.photo-details-container {
+  background-color: #eeeeee;
+  height: auto;
+  margin-top: 2em; }
+
+.camera-details-title {
+  display: block;
+  font-size: .5em;
+  margin-top: 5em; }
+
+.exif-details {
+  font-weight: 300;
+  margin-left: .2em; }
+
+.exif p, .photo-description p, .process-description p {
+  font-size: .6em;
+  margin-top: 2em; }
+
+.photo-description p, .process-description p {
+  font-weight: 300;
+  line-height: 1.4em;
+  text-transform: none; }
+
+/*# sourceMappingURL=style.css.map */
