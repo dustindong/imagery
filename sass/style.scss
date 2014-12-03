@@ -1,38 +1,8 @@
-$orange: #f5a623;
-$grey: #787878;
-$lightgrey: #BBBBBB;
-$darkgrey: #575757;
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  padding-bottom: 30em;
-}
-
-html {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-}
-
-img {
-  max-width: 100%;
-}
+@import 'variables';
+@import 'base';
 
 nav img {
-  padding: 2em 0 0 .8em;
-}
-
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
+  padding: 1em 0 0 .8em;
 }
 
 .logo {
@@ -52,7 +22,7 @@ nav img {
 }
 
   ul {
-  margin-top: -2em;
+  margin-top: -2.5em;
   position: relative;
   text-align: right;
   }
@@ -73,18 +43,18 @@ nav img {
   }
 
   @media only screen and (max-width: 1200px) {
-  width: 25%;
+    width: 25%;
   }
 
   @media only screen and (max-width: 800px) {
-  width: 33%;
+    width: 33%;
   }
 
   @media only screen and (max-width: 600px) {
-  line-height: 1.2em;
-  padding: 3em 1em 1em 1em;
-  text-align: left;
-  width: 100%;
+    line-height: 1.2em;
+    padding: 3em 1em 1em 1em;
+    text-align: left;
+    width: 100%;
   }
 }
 
@@ -111,7 +81,7 @@ nav img {
 }
 
 .reasons h1 {
-padding-bottom: 2em;
+  padding-bottom: 2em;
 
   @media screen and (max-width: 600px) {
     padding-bottom: 1em;
@@ -155,7 +125,8 @@ padding-bottom: 2em;
   text-align: center;
   text-decoration: none;
   width: 100%;
-    @media screen and (max-width:600px) {
+
+  @media screen and (max-width:600px) {
     margin-bottom: 1em;
   }
 }
@@ -171,15 +142,15 @@ padding-bottom: 2em;
 .grid-sizer {
   width: 20%;
 
-  @media screen and (max-width:1200px){
+  @media screen and (max-width:1200px) {
     width: 33.33%;
   }
 
-  @media screen and (max-width:800px){
+  @media screen and (max-width:800px) {
     width: 50%
   }
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:600px) {
     width: 100%;
   }
 }
@@ -195,11 +166,11 @@ padding-bottom: 2em;
     width: 33.33%;
   }
 
-  @media screen and (max-width:800px){
+  @media screen and (max-width:800px) {
     width: 50%
   }
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:600px) {
     width: 100%;
     padding: 0;
     margin-bottom: 1.5em;
@@ -312,7 +283,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=f
   font-size: .8em;
   font-weight: 300;
   outline: none;
-  }
+}
 
 .submit {
   background: url(../images/search.png) no-repeat left;
@@ -340,12 +311,12 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=f
   padding: 5em 0 0 1em;
   width: 500px;
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width:600px) {
     padding: 5em 0 0 0;
     width: 400px;
-
   }
 }
+
 .profile img {
   float: left;
 
@@ -357,7 +328,6 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, input[type=f
 .profile-bio, .location, .profile-name {
   font-weight: 400;
   margin-left: 1em;
-
 }
 
 .location {
@@ -384,33 +354,33 @@ nav a:hover, nav a:visited:hover, .details-user a:hover, .details-user a:visited
 }
 
 .menu-btn div {
- font-size: 18px;
- font-weight: 200;
- left: 100%;
- line-height: 1.2;
- margin-top: -0.50em;
- padding-right: 8px;
- position: absolute;
- top: 64%;
- vertical-align: middle;
- z-index: 99;
+  font-size: 18px;
+  font-weight: 200;
+  left: 100%;
+  line-height: 1.2;
+  margin-top: -0.50em;
+  padding-right: 8px;
+  position: absolute;
+  top: 64%;
+  vertical-align: middle;
+  z-index: 99;
 }
 
 .menu-btn span {
- background: rgb(0,0,0);
- display: block;
- height: 3px;
- margin: 4px 0;
- width: 19px;
- z-index: 99;
+  background: rgb(0,0,0);
+  display: block;
+  height: 3px;
+  margin: 4px 0;
+  width: 19px;
+  z-index: 99;
 }
 
 .responsive-menu{
- display: none;
+  display: none;
 }
 
 .expand {
- display: block !important;
+  display: block !important;
 }
 
 .add-new {
@@ -486,26 +456,29 @@ textarea {
   transition: all 1.5s ease-in-out;
 
 
-  @media screen and (max-width:1200px){
+  @media screen and (max-width:1200px) {
   height: 800px;
   }
 
-  @media screen and (max-width:1000px){
+  @media screen and (max-width:1000px) {
   height: 667px;
   }
 
-  @media screen and (max-width:800px){
+  @media screen and (max-width:800px) {
   height: 533px;
   }
 
-  @media screen and (max-width:600px){
+  @media screen and (max-width: 750px) {
+    margin-top: 4em;
+  }
+
+  @media screen and (max-width:600px) {
   height: 400px;
   }
 
-  @media screen and (max-width:400px){
+  @media screen and (max-width:400px) {
   height: 267px;
   }
-
 }
 
 .full-size-photo:hover {
@@ -582,10 +555,10 @@ h3 .details-user {
   float: right;
   width: 60%;
 
-    @media screen and (max-width:800px) {
-      width: 100%;
-      float: none;
-    }
+  @media screen and (max-width:800px) {
+    float: none;
+    width: 100%;
+  }
 }
 
 .photo-details-container {

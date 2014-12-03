@@ -12,9 +12,6 @@ html {
 img {
   max-width: 100%; }
 
-nav img {
-  padding: 2em 0 0 .8em; }
-
 .cf:before,
 .cf:after {
   content: " ";
@@ -24,6 +21,9 @@ nav img {
 
 .cf:after {
   clear: both; }
+
+nav img {
+  padding: 1em 0 0 .8em; }
 
 .logo {
   list-style-type: none;
@@ -39,7 +39,7 @@ nav img {
     padding-right: 1em;
     text-transform: uppercase; }
   .logo ul {
-    margin-top: -2em;
+    margin-top: -2.5em;
     position: relative;
     text-align: right; }
 
@@ -411,6 +411,9 @@ textarea {
   @media screen and (max-width: 800px) {
     .full-size-photo {
       height: 533px; } }
+  @media screen and (max-width: 750px) {
+    .full-size-photo {
+      margin-top: 4em; } }
   @media screen and (max-width: 600px) {
     .full-size-photo {
       height: 400px; } }
@@ -479,8 +482,8 @@ h3 .details-user {
   width: 60%; }
   @media screen and (max-width: 800px) {
     .photo-description, .process-description {
-      width: 100%;
-      float: none; } }
+      float: none;
+      width: 100%; } }
 
 .photo-details-container {
   background-color: #eeeeee;
