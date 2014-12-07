@@ -1,7 +1,7 @@
 @mixin vertical-align {
   position: relative;
-  top: 15%;
-  -webkit-transform: translateY(-15%);
-  -ms-transform: translateY(-15%);
-  transform: translateY(-15%);
+  top: 10%;
+  -webkit-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
 }
